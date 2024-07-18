@@ -1,0 +1,183 @@
+.admin-section {
+  height: 100vh;
+  background: url(../img/maq-pesada-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(39, 53, 61, 0.7);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-header {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.admin-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.admin-form {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.admin-form form {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border-radius: var(--border-r);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-form form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+  align-self: flex-start;
+}
+
+.admin-form form input,
+.admin-form form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--main-c);
+  border-radius: var(--border-r);
+  background-color: #333;
+  color: white;
+}
+
+.admin-form form textarea {
+  height: 100px; 
+  resize: none; 
+}
+
+.admin-form form .cta-a {
+  background-color: var(--main-c);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-r);
+  cursor: pointer;
+}
+
+.admin-product-list {
+  flex: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: var(--border-r);
+  color: white;
+  height: 400px;
+  overflow-y: auto;
+}
+
+/* Estilos para la sección de administración */
+.admin-section {
+  padding: 20px;
+}
+
+.admin-header {
+  text-align: center;
+}
+
+.admin-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-section {
+  width: 45%;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: var(--border-r);
+}
+
+.services-list {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: var(--border-r);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Estiliza la barra de desplazamiento */
+.services-list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.services-list::-webkit-scrollbar-track {
+  background: #333; 
+}
+
+.services-list::-webkit-scrollbar-thumb {
+  background-color: #000; 
+  border-radius: 10px; 
+  border: 3px solid #333; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: white;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: var(--border-r);
+  border: 1px solid #ccc;
+}
+
+button.cta-a {
+  align-self: flex-start;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: var(--border-r);
+}
+
+button.cta-a:hover {
+  background-color: #ffbb00;
+}
+
+.services-list div {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: var(--border-r);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.services-list p {
+  margin: 5px 0;
+}

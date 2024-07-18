@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Reparaciones y Mantenciones Morgado</title>
+  <link rel="stylesheet" href="../css/style-general.css">
+  <link rel="stylesheet" href="../css/style-catalogo.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <div class="logo">
+      <img src="../img/logo.png" alt="Logo">
+      <span>SERVICIO TÉCNICO</span>
+      <span>MORGADO</span>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="./home.html#inicio">INICIO</a></li>
+        <li><a href="./home.html#servicios">TIENDA</a></li>
+        <li><a href="./home.html#somos">SOMOS</a></li>
+        <li><a href="./home.html#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <a href="catalogo.html#carrito-compras"><img src="../img/cart-icon.png" alt="Carrito"></a>
+      <a href="#" id="login-icon"><img src="../img/login-icon.png" alt="Iniciar Sesión"></a>
+      <a href="#"><img src="../img/search-icon.png" alt="Buscar"></a>
+      <div id="logout-menu" class="logout-menu">
+        <ul>
+          <li><a href="./home.html#inicio" id="logout-button">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero-section catalog-section">
+  <div class="catalog-header">
+    <h1>Catálogo de Productos/Servicios</h1>
+    <!-- Botones de filtro -->
+    <div class="filter-buttons">
+      <button id="filter-all" class="filter-button">Todos</button>
+      <button id="filter-discount" class="filter-button">Con Descuento</button>
+      <button id="filter-no-discount" class="filter-button">Sin Descuento</button>
+    </div>
+  </div>
+  
+  <div class="catalog-content">
+    <div class="catalog-list">
+      <table id="product-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Categoría</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí se agregarán los productos -->
+        </tbody>
+      </table>
+    </div>
+    <div class="cart-section" id="carrito-compras">
+      <h2>Carrito de Compras</h2>
+      <div class="cart-list">
+        <!-- Aquí se agregarán los productos del carrito -->
+      </div>
+      <div class="cart-summary">
+        <p><strong>Precio Neto:</strong> $<span id="net-price">0</span></p>
+        <p><strong>IVA (19%):</strong> $<span id="iva">0</span></p>
+        <p><strong>Total:</strong> $<span id="total-price">0</span></p>
+      </div>
+      <button class="cta-a" onclick="comprar()">Comprar</button>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Modal Voucher -->
+<div id="voucherModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="voucherContent">
+      <!-- Aquí se mostrará el contenido del voucher -->
+    </div>
+  </div>
+</div>
+
+<script src="../js/catalogo.js"></script>
+
+</body>
+</html>

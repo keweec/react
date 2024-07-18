@@ -1,0 +1,336 @@
+:root {
+    --main-c: #fdd72d;
+    --border-r: .2rem;
+  }
+  
+  /* Estilos Generales */
+  html * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul, li {
+    list-style: none;
+  }
+  
+  .wrap-cta {
+    padding: 1.5rem 0;
+  }
+  
+  .cta-a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--main-c);
+    padding: .5rem 1rem;
+    border-radius: var(--border-r);
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+  }
+  
+  /* Estilos Header */
+  .main-header {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--main-c);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 0.5rem;
+  }
+  
+  .logo span {
+    color: var(--main-c);
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .main-nav ul li {
+    margin: 0 1rem;
+  }
+  
+  .main-nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .main-nav ul li a:hover {
+    color: var(--main-c);
+  }
+  
+  .nav-icons a {
+    margin: 0 0.5rem;
+  }
+  
+  .nav-icons img {
+    width: 20px;
+    filter: invert(86%) sepia(94%) saturate(428%) hue-rotate(2deg) brightness(106%) contrast(105%);
+  }
+  
+  /* Estilos Modal */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    padding-top: 60px; 
+  }
+  
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: var(--border-r);
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    background: url(../img/maq-pesada-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(39, 53, 61, 0.7);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrap-hero-section {
+    max-width: 600px;
+    color: #fff;
+    padding: 15%;
+  }
+  
+  /* Logo Brand Section */
+  .section {
+    margin: 5rem 0;
+  }
+  
+  .section h2 {
+    padding: 2rem 0;
+  }
+  
+  .wrap-logos-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-brand {
+    width: 200px;
+    padding: 1rem 2rem;
+  }
+  
+  /* Wrap Title */
+  .wrap-title-section {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem;
+    color: black;
+  }
+  
+  .wrap-title-section2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem;
+    color: white;
+  }
+  
+  /* Servicios Section */
+  .servicios-section {
+    background-color: #000000;
+  }
+  
+  .wrap-servicios-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .item-servicios-section {
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .item-servicios-section img {
+    width: 300px;
+    height: 225px;
+  }
+  
+  /* Two Columns Section */
+  .wrap-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .wrap-img_two-column {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  
+  .wrap-text-column h3 {
+    padding: 2rem 0;
+  }
+  
+  .wrap-text-column p {
+    padding-bottom: 1rem;
+  }
+  
+  /* Form Section */
+  section.two-column-section.form {
+    background-color: #5f5f5f;
+    padding: 1rem 0;
+  }
+  
+  .form input,
+  .form textarea {
+    display: flex;
+    width: 100%;
+    line-height: 1.75rem;
+    border: 1.5px solid #fff;
+    border-radius: var(--border-r);
+  }
+  
+  .form textarea {
+    min-height: 200px;
+  }
+  
+  input[type="submit"] {
+    border: 0;
+    display: inline;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .wrap-social-logos ul,
+  .wrap-menu-footer-section ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-logo {
+    max-width: 75px;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .wrap-menu-footer-section ul li {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+  
+  .footer-creds {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Menu Admin */
+  .logout-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid var(--main-c);
+    border-radius: var(--border-r);
+  }
+  
+  .logout-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logout-menu ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .logout-menu ul li a {
+    color: var(--main-c);
+    text-decoration: none;
+  }
+  
+  .logout-menu ul li a:hover {
+    text-decoration: underline;
+  }
+  

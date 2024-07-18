@@ -1,0 +1,134 @@
+/* src/App.css */
+:root {
+    --main-c: #fdd72d;
+    --border-r: .2rem;
+  }
+  
+  html * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul, li {
+    list-style: none;
+  }
+  
+  .wrap-cta {
+    padding: 1.5rem 0;
+  }
+  
+  .cta-a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--main-c);
+    padding: .5rem 1rem;
+    border-radius: var(--border-r);
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+  }
+  
+  .App {
+    text-align: center;
+    background: url('/public/img/maq-pesada-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(39, 53, 61, 0.7);
+    background-blend-mode: multiply;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  td {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  button {
+    background-color: var(--main-c);
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--border-r);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e6c200;
+  }
+  
+  input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--main-c);
+    border-radius: var(--border-r);
+  }
+  
+  form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: var(--border-r);
+    margin: 20px 0;
+    width: 300px;
+  }
+  
+  form input[type="submit"], form input[type="reset"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 10px;
+  }
+  
+  .button {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--main-c);
+    padding: .5rem 1rem;
+    border-radius: var(--border-r);
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0;
+  }
+  
+  .button:hover {
+    background-color: darken(var(--main-c), 10%);
+  }
